@@ -39,8 +39,8 @@
      <Compile Include="Assets\script\GameManager.cs" />
      <Compile Include="Assets\script\ouo.cs" />
      <Compile Include="Assets\script\MainMenu.cs" />
-     <Compile Include="Assets\script\count_score.cs" />
      <Compile Include="Assets\script\printScore.cs" />
+     <Compile Include="Assets\script\count_score.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
