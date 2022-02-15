@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class count_score : MonoBehaviour
 {
-    [SerializeField]
-    private int left_score;
-    [SerializeField]
-    private int right_score;
+    static public int left_score;
+    static public int right_score;
     
     private Rigidbody2D rb;
     public float serve_force;
