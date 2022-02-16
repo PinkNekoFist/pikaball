@@ -28,13 +28,13 @@ public class Movement : MonoBehaviour
         {
             rb.velocity = new Vector2(-vc.x,rb.velocity.y);
         }
-        if(Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
-        {
-            rb.velocity = new Vector2(0,rb.velocity.y);
-        }
-        if(Input.GetKey(KeyCode.D))
+       
+        else if(Input.GetKey(KeyCode.D))
         {
             rb.velocity = new Vector2(vc.x, rb.velocity.y);
+        }
+        else{
+            rb.velocity = new Vector2(0,rb.velocity.y);
         }
         if(Input.GetKeyDown(KeyCode.W) && hit == true)
         {
