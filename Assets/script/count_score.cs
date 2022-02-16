@@ -36,10 +36,10 @@ public class count_score : MonoBehaviour
     }
     public void Serve(){
         if(transform.position.x == 5){
-            rb.AddForce(new Vector2(-serve_force,0),ForceMode2D.Impulse);
+            rb.AddForce(new Vector2(-serve_force-3,serve_force),ForceMode2D.Impulse);
         }
         else if(transform.position.x == -5){
-            rb.AddForce(new Vector2(serve_force,0),ForceMode2D.Impulse);
+            rb.AddForce(new Vector2(serve_force+3,serve_force),ForceMode2D.Impulse);
         }
     }
 }

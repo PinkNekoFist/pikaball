@@ -28,13 +28,13 @@ public class Movementt : MonoBehaviour
         {
             rb.velocity = new Vector2(-vc.x,rb.velocity.y);
         }
-        if(Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow))
-        {
-            rb.velocity = new Vector2(0,rb.velocity.y);
-        }
-        if(Input.GetKey(KeyCode.RightArrow))
+        else if(Input.GetKey(KeyCode.RightArrow))
         {
             rb.velocity = new Vector2(vc.x, rb.velocity.y);
+        }
+        else
+        {
+            rb.velocity = new Vector2(0,rb.velocity.y);
         }
         if(Input.GetKeyDown(KeyCode.UpArrow) && hit == true)
         {

@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space)){
             ball.SetActive(true);
-            GameObject.Find("Ball").GetComponent<count_score>().Serve();
+            GameObject.Find("ball").GetComponent<count_score>().Serve();
         }
         if(count_score.left_score >= 11){
             SceneManager.LoadScene(2);
