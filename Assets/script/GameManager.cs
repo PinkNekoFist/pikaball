@@ -21,15 +21,16 @@ public class GameManager : MonoBehaviour
             GameObject.Find("ball").GetComponent<count_score>().Serve();
         }
         if(count_score.left_score >= 11||count_score.right_score >= 11){
-            SceneManager.LoadScene(2);
-            count_score.left_score = 0;
-            count_score.right_score = 0;
             if(count_score.left_score>count_score.right_score){
                 Lwin = true;
             }
             else{
                 Lwin = false;
             }
+            SceneManager.LoadScene(2);
+            count_score.left_score = 0;
+            count_score.right_score = 0;
+            
         }
     }
     public void MainMenu(){
