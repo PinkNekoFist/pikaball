@@ -15,6 +15,12 @@ public class Movement : MonoBehaviour
             hit = true;
         }
     }
+    private void OnCollisionExit2D(Collision2D other) {
+        if(other.gameObject.tag == "left_floor")
+        {
+            hit = false;
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
